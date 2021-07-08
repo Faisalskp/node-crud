@@ -1,7 +1,7 @@
 {
   "name": "node-crud",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Help for node crud... eg, make crud (roles,users) with single command.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,7 +38,7 @@
   "author": "faisal saleem",
   "license": "ISC",
   "bin": {
-    "node-crud": "./src/index.js"
+    "node-crud": "src/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.1",
@@ -46,5 +46,14 @@
     "commander": "^8.0.0",
     "figlet": "^1.5.0",
     "prettier": "^2.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faisalskp/node-crud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Faisalskp/node-crud/issues"
+  },
+  "homepage": "https://github.com/Faisalskp/node-crud#readme"
 }
