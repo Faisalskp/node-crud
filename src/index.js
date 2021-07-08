@@ -26,13 +26,13 @@ const config = getConfig()
 const templatePath = `./templates/${program.type}.js`;
 
 clear();
-console.log(chalk.green("########## node-crud ##########"));
+console.log(chalk.green("########## node-auto-crud ##########"));
 console.log(
     chalk.yellow(
         figlet.textSync('Faisalskp', { horizontalLayout: 'full' })
     )
 );
-console.log(chalk.green("########## node crud ##########"));
+console.log(chalk.green("########## node-auto-crud ##########"));
 
 // Convenience wrapper around Prettier, so that config doesn't have to be ,passed every time.
 program

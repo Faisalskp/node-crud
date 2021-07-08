@@ -4,14 +4,14 @@ Help for node crud... eg, make crud (roles,users) with single command.
 
 # Installation 
 
-`npm install node-crud -g --save`
+`npm install node-auto-crud -g --save`
 
 Quickstart...
 
 ```
     First install globally
 
-    use command cli : "node-crud users"
+    use command cli : "node-auto-crud users"
 
     create : myapp/routes/users.route.js
     create : myapp/controller/users.controller.js
@@ -27,7 +27,7 @@ Quickstart...
 * *Step 3* : make new folder controllers
 * *Step 4* : make new folder models
 * *Step 5* : make new folder services
-* *Step 6* : now run command like : node-crud users
+* *Step 6* : now run command like : node-auto-crud users
 
 ## Features
 

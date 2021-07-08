@@ -1,6 +1,6 @@
 {
-  "name": "node-crud",
-  "version": "1.0.1",
+  "name": "node-auto-crud",
+  "version": "1.0.0",
   "description": "Help for node crud... eg, make crud (roles,users) with single command.",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,7 @@
   "author": "faisal saleem",
   "license": "ISC",
   "bin": {
-    "node-crud": "src/index.js"
+    "node-auto-crud": "src/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.1",
