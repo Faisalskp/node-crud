@@ -9,6 +9,10 @@ const {
     writeFilePromises
 } = require('./utils');
 
+const {
+    writeFilePromise_helper,
+    writeFilePromises_helper
+} = require('./utils_helper');
 
 module.exports = {
     getCurrentDirectoryBase: () => {
@@ -67,6 +71,39 @@ module.exports = {
                         console.error(err);
                     });
                 console.log(chalk.green(`successfully genrate ${componentDir}`));
+            }
+        } catch (err) {
+            console.error(err)
+        }
+    },
+
+    createFile_Helpers: (dirName, helperName) => {
+        try {
+            const helperDir = `${dirName}/${helperName}.${dirName}.js`;
+            const helperIndex = `${dirName}/index.js`;
+
+            const fullPathToHelper = path.resolve(helperDir);
+            const fullPathToIndex = path.resolve(helperIndex);
+
+            if (fs.existsSync(fullPathToHelper)) {
+                console.log(chalk.blue(`--------------- ${dirName} ---------------`));
+                console.log(`file already exists ${helperDir}`)
+                console.log(chalk.blue(`--------------------------------------`));
+            } else {
+                console.log(chalk.yellow(`going to genrate ${helperDir}`));
+
+                writeFilePromise_helper(fullPathToHelper, helperName)
+                    .then((resp) => {
+                        // console.log(resp)
+                    })
+                    .then((template) => {
+                        writeFilePromises_helper(fullPathToHelper, fullPathToIndex, helperName)
+                    })
+
+                    .catch((err) => {
+                        console.error(err);
+                    });
+                console.log(chalk.green(`successfully genrate ${dirName}`));
             }
         } catch (err) {
             console.error(err)

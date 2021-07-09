@@ -10,8 +10,11 @@ const figlet = require('figlet');
 const program = require('commander');
 
 const {
-    existFiles
+    existFiles,
 } = require('./helpers');
+const {
+    createHelper
+} = require('./createHelper');
 
 // Load our package.json, so that we can pass the version onto `commander`.
 const { version } = require('../package.json');
@@ -38,11 +41,8 @@ const options = program.opts();
 if (options.helper) {
     console.log(chalk.blue("************ Helpers *************"));
     const [componentName] = program.args;
-    console.log(chalk.red("going to genrate", componentName, "helper.!"));
-
-    console.log(chalk.yellow(" Comming Soon ........... under maintenance "));
-    console.log(chalk.yellow(" Comming Soon ........... under maintenance "));
-    console.log(chalk.yellow(" Comming Soon ........... under maintenance "));
+    const dirName = "helpers"
+    const helpers = createHelper(dirName, componentName);
 
     console.log(chalk.blue("************ Helpers *************"));
 } else {
