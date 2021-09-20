@@ -366,7 +366,7 @@ module.exports.writeFilePromises = (fullPath, fileLocation, folderNameDirs) =>
                         var serviceCounter1 = count - count + 1
                         var serviceCounter2 = count - 1
 
-                        newString2 = `const ${path7}Service = require('./${path5}')`
+                        newString2 = `const {${path7}Service} = require('./${path5}')`
                         newString3 = `${path7}Service,`
 
                         let stringToAdd = newString2;
@@ -422,7 +422,7 @@ module.exports.writeFilePromises = (fullPath, fileLocation, folderNameDirs) =>
                         var controllerCounter1 = count - count + 1
                         var controllerCounter2 = count - 1
 
-                        newString2 = `const ${path7}Controller = require('./${path5}')`
+                        newString2 = `const {${path7}Controller} = require('./${path5}')`
                         newString3 = `${path7}Controller,`
 
                         let stringToAdd = newString2;
