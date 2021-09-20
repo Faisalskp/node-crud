@@ -69,7 +69,7 @@ module.exports.writeFilePromise = (fileLocation) =>
         var router = express.Router();
         
         const { ${path7}Controller } = require('../controllers')
-        /* ${path7} routes listing. */
+        /* ${path7} routes listing. -- code crud --  */
        
         router.post('/addOne', ${path7}Controller.addOne);
         router.get('/findAll', ${path7}Controller.findAll);
