@@ -10,7 +10,7 @@ Help for node helpers like user helper (built-in helper function code).
 Quickstart...
 
 ```
-    First install globally
+    First install globally -- Globally Install -- 
 
     1- use command create crud : node-auto-crud nameCrud
         create : myapp/routes/users.route.js
